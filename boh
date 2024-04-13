@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
   <title>Alessandro Simoni</title>
   <link rel="shortcut icon" href="IMG_VIDEO/cv2.png">
   <link rel="stylesheet" href="CSS/style.css">
@@ -12,9 +13,12 @@
 </head>
 
 <body>
-  <nav>
-    <div class="title"> Il mio CV online </div>
-  </nav>
+
+  <header class="container">
+    <nav>
+      <div class="title"> Il mio CV online </div>
+    </nav>
+  </header>
 
   <div class="bigbox">
     <div class="infobox">
@@ -23,7 +27,7 @@
         <div class="info1">
           <div class="info-item">
             <img src="IMG_VIDEO/user.png" class="user">
-            <p class="name"><b>Dott. Alessandro Simoni</b></p>
+            <p class="name">Alessandro Simoni</p>
           </div>
           <div class="info-item">
             <img src="IMG_VIDEO/phone.png" class="phone">
@@ -52,56 +56,10 @@
             <p class="name">Patente di guida B</p>
           </div>
           <div class="info-item">
-            <img src="IMG_VIDEO/linkedin.png" class="auto">
-            <a href="https://www.linkedin.com/in/alessandrosimoni00/" target="_blank" class="linkedin">alessandrosimoni00</a>
+            <img src="IMG_VIDEO/auto.png" class="auto">
+            <p class="name">Non automonito</p>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="studybox">
-      <h1>Formazione accademica</h1>
-      <div class="study-container">
-        <a href="https://corsi.unige.it/corsi/8759" target="_blank"><img src="IMG_VIDEO/unige.png" class="unige"></a>
-        <div class="study1">
-          <div class="info-item">
-            <p class="name"><b>Università degli Studi di Genova</b><br>            
-              [09/2020-03/2024]<br>
-              Laurea Triennale in Informatica<br>
-              Voto finale 90/110
-            </p>
-          </div>
-        </div>
-        <a href="https://www.liceti.edu.it/" target="_blank"><img src="IMG_VIDEO/liceti.png" class="liceti"></a>
-        <div class="study1">
-          <div class="info-item">
-            <p class="name"><b>Istituto Superiore Statale “Fortunio Liceti”</b><br>            
-              [09/2014-06/2020]<br>
-              Diploma in Sistemi Informativi Aziendali<br>
-              Voto finale 82/100
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="langbox">
-      <h1>Lingue parlate</h1>
-      <div class="lang-container">
-        <div class="lang1">
-          <div class="info-item">
-            <p class="name"><b>Italiano</b>: Madrelingua<br><br>
-              <b>Spagnolo</b>: Avanzato<br><br>
-              <b>Inglese</b>: Intermedio<br><br>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="jobbox">
-      <h1>Esperienza lavorative</h1>
-      <div class="info-container">
       </div>
     </div>
   </div>  
