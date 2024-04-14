@@ -30,12 +30,12 @@ a {
 }
 
 nav {
-    padding: 1rem 1rem;
-    height: 6rem;
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
     background-color: var(--primary-color);
     color: var(--text);
-    text-align: center;
 }
 
 h1 {
@@ -47,6 +47,43 @@ h1 {
     font-size: 2.5rem;
     font-weight: bold;
     margin-top: 0.5rem;
+}
+
+.nav-buttons {
+    display: flex;
+}
+
+.aboutme-button,
+.myprojects-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #D3EBFD;
+    color: #374F59;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.aboutme-button:hover,
+.myprojects-button:hover {
+    background-color: #54B6FE;
+    color: white;
+}
+
+.aboutme-button,
+.myprojects-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    /* Spazio tra i bottoni */
+    background-color: #D3EBFD;
+    /* Cambia colore se preferisci */
+    color: #374F59;
+    /* Cambia colore se preferisci */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .bigbox {
@@ -77,6 +114,23 @@ h1 {
     border-radius: 5%;
     float: left;
     margin-left: 2rem;
+}
+
+.ey{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5%;
+    float: left;
+    margin-left: 2rem;
+}
+
+.sigla{
+    width: 8rem;
+    height: 4rem;
+    border-radius: 5%;
+    float: left;
+    margin-left: 2rem;
+
 }
 
 .infobox {
@@ -119,7 +173,7 @@ h1 {
     text-align: center;
 }
 
-.jobbox{
+.jobbox {
     width: 85rem;
     height: 18rem;
     border-radius: 1rem;
@@ -164,7 +218,8 @@ h1 {
 
 .info-container,
 .study-container,
-.lang-container {
+.lang-container,
+.job-container {
     display: flex;
     align-items: center;
 }
@@ -177,6 +232,10 @@ h1 {
 
 .study-container {
     margin-top: 2rem;
+}
+
+.job-container {
+    margin-top: 1rem;
 }
 
 .info-item {
@@ -221,6 +280,37 @@ h1 {
     float: left;
     margin-right: 0.5rem;
 }
+
+/* Aggiungi questo stile al tuo foglio di stile CSS */
+
+.download-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    /* Regola il margine superiore a tuo piacimento */
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    /* Spazio tra i bottoni */
+    background-color: #D3EBFD;
+    /* Cambia colore se preferisci */
+    color: #374F59;
+    /* Cambia colore se preferisci */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #54B6FE;
+    /* Cambia colore se preferisci */
+    color: white;
+    /* Cambia colore se preferisci */
+}
+
 
 footer {
     bottom: 0;
