@@ -106,7 +106,7 @@ h1 {
     height: 4rem;
     border-radius: 5%;
     float: left;
-    margin-left: 2rem;
+    margin-left: 9rem;
 }
 
 .sigla {
@@ -114,8 +114,7 @@ h1 {
     height: 4rem;
     border-radius: 5%;
     float: left;
-    margin-left: 2rem;
-
+    margin-left: 8rem;
 }
 
 .infobox {
@@ -200,13 +199,13 @@ h1 {
     align-self: center;
 }
 
-.job1 {
+.job1,
+.job2 {
     width: 22rem;
     margin-left: 1rem;
     font-size: 1.15rem;
     float: left;
 }
-
 
 .info-container,
 .study-container,
