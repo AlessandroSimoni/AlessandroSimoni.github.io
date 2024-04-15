@@ -93,46 +93,6 @@ h1 {
     float: left;
 }
 
-.foto {
-    width: 15rem;
-    height: 15rem;
-    border-radius: 5%;
-    float: left;
-}
-
-.unige {
-    width: 6rem;
-    height: 6rem;
-    border-radius: 5%;
-    float: left;
-    margin-left: 1rem;
-}
-
-.liceti {
-    width: 8rem;
-    height: 6rem;
-    border-radius: 5%;
-    float: left;
-    margin-left: 2rem;
-}
-
-.ey{
-    width: 4rem;
-    height: 4rem;
-    border-radius: 5%;
-    float: left;
-    margin-left: 2rem;
-}
-
-.sigla{
-    width: 8rem;
-    height: 4rem;
-    border-radius: 5%;
-    float: left;
-    margin-left: 2rem;
-
-}
-
 .infobox {
     width: 85rem;
     height: 18rem;
@@ -145,50 +105,7 @@ h1 {
     padding: 1.5rem;
 }
 
-.studybox {
-    width: 55rem;
-    height: 18rem;
-    border-radius: 1rem;
-    margin-top: 3rem;
-    margin-left: 5rem;
-    float: left;
-    background-color: var(--primary-color);
-    color: var(--text);
-    padding: 1.5rem;
-    text-align: center;
-    font-size: 1rem;
-}
-
-.langbox {
-    width: 25rem;
-    height: 18rem;
-    border-radius: 1rem;
-    margin-top: 3rem;
-    margin-left: 5rem;
-    float: left;
-    background-color: var(--primary-color);
-    color: var(--text);
-    padding: 1.5rem;
-    font-size: 1.15rem;
-    text-align: center;
-}
-
-.jobbox {
-    width: 85rem;
-    height: 18rem;
-    border-radius: 1rem;
-    margin-top: 3rem;
-    margin-left: 5rem;
-    float: left;
-    background-color: var(--primary-color);
-    color: var(--text);
-    padding: 1.5rem;
-    font-size: 1.15rem;
-    text-align: center;
-}
-
-.info1,
-.info2 {
+.info1{
     width: 25rem;
     margin-top: 0.5rem;
     float: left;
@@ -198,95 +115,6 @@ h1 {
     margin-left: 2.5rem;
 }
 
-.info2 {
-    margin-left: 8rem;
-}
-
-.study1 {
-    width: 17rem;
-    margin-left: 1rem;
-    font-size: 1.15rem;
-    float: left;
-}
-
-.lang1 {
-    text-align: left;
-    margin-top: 2rem;
-    align-self: center;
-}
-
-.job1 {
-    width: 22rem;
-    margin-left: 1rem;
-    font-size: 1.15rem;
-    float: left;
-}
-
-
-.info-container,
-.study-container,
-.lang-container,
-.job-container {
-    display: flex;
-    align-items: center;
-}
-
-.lang-container {
-    justify-content: center;
-    align-items: center;
-    margin-top: 1.25rem;
-}
-
-.study-container {
-    margin-top: 2rem;
-}
-
-.job-container {
-    margin-top: 1rem;
-}
-
-.info-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-.user,
-.phone,
-.email,
-.luogo,
-.patente,
-.nascita,
-.genere,
-.auto {
-    width: 2rem;
-    height: 2rem;
-    margin-right: 0.5rem;
-}
-
-.name {
-    margin: 0;
-}
-
-.number:hover,
-.mail:hover,
-.linkedin:hover {
-    text-decoration: underline;
-}
-
-.mail {
-    float: left;
-    margin-top: 0.25rem;
-}
-
-.phone,
-.user,
-.email {
-    width: 2rem;
-    height: 2rem;
-    float: left;
-    margin-right: 0.5rem;
-}
 
 /* Aggiungi questo stile al tuo foglio di stile CSS */
 
