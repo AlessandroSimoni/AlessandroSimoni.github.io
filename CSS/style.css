@@ -114,7 +114,7 @@ h1 {
     height: 4rem;
     border-radius: 5%;
     float: left;
-    margin-left: 8rem;
+    margin-left: 7rem;
 }
 
 .infobox {
@@ -201,10 +201,13 @@ h1 {
 
 .job1,
 .job2 {
-    width: 22rem;
     margin-left: 1rem;
     font-size: 1.15rem;
     float: left;
+}
+
+.job1{
+    width: 22rem;
 }
 
 .info-container,
@@ -444,7 +447,7 @@ footer {
     }
 
     .jobbox {
-        height: 50rem;
+        height: 45rem;
     }
 
 
