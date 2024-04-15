@@ -443,7 +443,7 @@ footer {
     }
 
     .jobbox {
-        height: 75rem;
+        height: 45rem;
     }
 
 
@@ -476,6 +476,21 @@ footer {
     .liceti{
         width: 8rem;
         height: 6rem;
+        margin-left: 3.5rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .ey{
+        width: 5rem;
+        height: 5rem;
+        margin-left: 5.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .sigla{
+        width: 8rem;
+        height: 4rem;
         margin-left: 3.5rem;
         margin-top: 2rem;
         margin-bottom: 1rem;
