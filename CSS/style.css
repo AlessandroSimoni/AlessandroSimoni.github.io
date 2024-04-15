@@ -71,21 +71,6 @@ h1 {
     color: white;
 }
 
-.aboutme-button,
-.myprojects-button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 0 10px;
-    /* Spazio tra i bottoni */
-    background-color: #D3EBFD;
-    /* Cambia colore se preferisci */
-    color: #374F59;
-    /* Cambia colore se preferisci */
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
 .bigbox {
     position: relative;
     width: 100%;
@@ -336,6 +321,15 @@ footer {
 /* Stili per dispositivi con larghezza massima di 768px */
 @media only screen and (max-width: 768px) {
 
+    nav{
+        width: 100vw;
+    }
+
+    .nav-buttons {
+        font-size: 0.5rem;
+        text-align: center;
+    }
+
     .bigbox {
         width: 100%;
         align-content: center;
@@ -407,9 +401,7 @@ footer {
         width: 100vw;
     }
 
-    
     .nav-buttons {
-        margin-right: 1rem;
         font-size: 0.5rem;
         text-align: center;
     }
@@ -417,6 +409,7 @@ footer {
     .aboutme-button,
     .myprojects-button {
         border: 1px solid #374F59;
+        padding: 8px 10px;
     }
 
     .title {
@@ -424,7 +417,8 @@ footer {
     }
 
     .bigbox {
-        width: 100%;
+        width: 100vw;
+        margin-left: 11vw;
     }
 
     .infobox,
