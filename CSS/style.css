@@ -230,7 +230,8 @@ h1 {
     margin-top: 1rem;
 }
 
-.info-item {
+.info-item,
+.lang-item {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
@@ -316,7 +317,6 @@ footer {
     margin-top: 5rem;
 }
 
-/* Stili precedenti qui ... */
 
 /* Stili per dispositivi con larghezza massima di 768px */
 @media only screen and (max-width: 768px) {
@@ -417,8 +417,8 @@ footer {
     }
 
     .bigbox {
-        width: 100vw;
-        margin-left: 11vw;
+        width: 77vw;
+        margin: 0 auto;
     }
 
     .infobox,
@@ -426,11 +426,24 @@ footer {
     .langbox,
     .jobbox {
         width: 18rem;
-        font-size: small;
+        font-size: medium;
+        margin-left: 0;
     }
 
     .infobox {
         height: 45rem;
+    }
+
+    .studybox {
+        height: 45rem;
+    }
+
+    .langbox {
+        height: 15rem;
+    }
+
+    .jobbox {
+        height: 75rem;
     }
 
 
@@ -441,17 +454,31 @@ footer {
         display:block;   
     }
 
-    .foto,
-    .unige,
-    .liceti,
-    .ey,
-    .sigla {
-        width: 100%;
-        margin-left: 0;
+    .lang-item{
+        display: block;
     }
 
     .foto{
         margin-bottom: 2rem;
+    }
+
+    .unige{
+        width: 10rem;
+        margin-bottom: 1rem;
+        margin-left: 4rem;
+    }
+
+    .unige{
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .liceti{
+        width: 8rem;
+        height: 6rem;
+        margin-left: 3.5rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
     }
 
     .info1,
@@ -468,7 +495,7 @@ footer {
         text-align: center;
     }
 
-    .title {
-        margin-top: 0;
+    .lang1{
+        text-align: center;
     }
 }
