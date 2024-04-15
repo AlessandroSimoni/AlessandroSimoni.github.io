@@ -396,7 +396,7 @@ footer {
 }
 
 /* Stili per dispositivi con larghezza massima di 480px */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 550px) {
 
     body{
         width: 100vw;
