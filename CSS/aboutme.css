@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: white;
+    background-color: #f7f7f2;
     font-family: "Philosopher", sans-serif;
     margin: 0;
     padding: 0;
@@ -93,9 +93,9 @@ h1 {
     float: left;
 }
 
-.infobox {
-    width: 85rem;
-    height: 18rem;
+.welcomebox,
+.musicbox {
+    height: 22rem;
     border-radius: 1rem;
     margin-top: 3rem;
     margin-left: 5rem;
@@ -105,14 +105,29 @@ h1 {
     padding: 1.5rem;
 }
 
-.info1{
-    width: 25rem;
-    margin-top: 0.5rem;
-    float: left;
+.welcomebox{
+    width: 55rem;
+    text-align: center;
+    margin-left: 20rem;
 }
 
-.info1 {
+.musicbox{
+    width: 85rem;
+}
+
+.music-text{
+    margin-top: 2rem;
+    text-align: center;
+    width: 20rem;
+    font-size: 1.15rem;
+}
+
+.welcome{
+    width: 48rem;
+    margin-top: 0.5rem;
+    float: left;
     margin-left: 2.5rem;
+    align-items: center;
 }
 
 
