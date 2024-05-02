@@ -105,24 +105,47 @@ h1 {
     padding: 1.5rem;
 }
 
-.welcomebox{
+.welcomebox {
     width: 55rem;
     text-align: center;
     margin-left: 20rem;
 }
 
-.musicbox{
+.musicbox {
     width: 85rem;
 }
 
-.music-text{
+.music-text {
+    float: left;
     margin-top: 2rem;
     text-align: center;
     width: 20rem;
     font-size: 1.15rem;
 }
 
-.welcome{
+.first-song {
+    float: left;
+    text-align: center;
+    width: 20rem;
+    font-size: 1.15rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.molecole {
+    width: 11rem;
+    height: 11rem;
+    border-radius: 1rem;
+}
+
+.song-title {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+
+.welcome {
     width: 48rem;
     margin-top: 0.5rem;
     float: left;

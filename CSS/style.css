@@ -319,6 +319,24 @@ footer {
     margin-top: 5rem;
 }
 
+.scroll-to-top {
+    position: fixed;
+    bottom: 75px;
+    right: 20px;
+    display: none;
+    /* La freccia sarà nascosta di default */
+    z-index: 999;
+}
+
+.scroll-to-top img {
+    width: 50px;
+    /* Personalizza le dimensioni dell'immagine */
+    height: auto;
+    cursor: pointer;
+    /* Cambia il cursore al passaggio sopra l'immagine */
+}
+
+
 
 /* Stili per dispositivi con larghezza massima di 768px */
 @media only screen and (max-width: 768px) {
@@ -530,8 +548,12 @@ footer {
         /* Aggiungi margine tra i bottoni */
     }
 
-    .engCV{
+    .engCV {
         margin-bottom: 0;
     }
 
+    .scroll-to-top {
+        bottom: 100px;
+        display: block;
+    }
 }
