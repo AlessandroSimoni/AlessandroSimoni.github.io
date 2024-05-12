@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     albumCover.addEventListener('click', function() {
       if (!isPlaying) {
         // Sostituisci l'immagine con una GIF animata
-        albumCover.src = '../IMG_VIDEO/molecole.gif';
+        albumCover.src = '../IMG_VIDEO/discoMolecole.gif';
 
         // Avvia la riproduzione dell'audio
         music.play();
