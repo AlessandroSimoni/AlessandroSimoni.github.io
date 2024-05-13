@@ -5,6 +5,13 @@
     --menu-speed: 0.75s;
 }
 
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('../FONT/RobotoCondensed-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +20,7 @@
 
 body {
     background-color: #f7f7f2;
-    font-family: "Philosopher", sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -86,11 +93,10 @@ h1 {
 }
 
 .unige {
-    width: 6rem;
-    height: 6rem;
-    border-radius: 5%;
+    width: 5.5rem;
+    height: 5.5rem;
     float: left;
-    margin-left: 1rem;
+    margin: 0 0 0 2rem;
 }
 
 .liceti {
@@ -106,7 +112,7 @@ h1 {
     height: 4rem;
     border-radius: 5%;
     float: left;
-    margin-left: 9rem;
+    margin-left: 2rem;
 }
 
 .sigla {
@@ -114,7 +120,6 @@ h1 {
     height: 4rem;
     border-radius: 5%;
     float: left;
-    margin-left: 7rem;
 }
 
 .infobox {
@@ -133,8 +138,7 @@ h1 {
     width: 55rem;
     height: 18rem;
     border-radius: 1rem;
-    margin-top: 3rem;
-    margin-left: 5rem;
+    margin: 3rem 0 0 5rem;
     float: left;
     background-color: var(--primary-color);
     color: var(--text);
@@ -147,8 +151,7 @@ h1 {
     width: 25rem;
     height: 18rem;
     border-radius: 1rem;
-    margin-top: 3rem;
-    margin-left: 5rem;
+    margin: 3rem 4rem 0 5rem;
     float: left;
     background-color: var(--primary-color);
     color: var(--text);
@@ -159,7 +162,7 @@ h1 {
 
 .jobbox {
     width: 85rem;
-    height: 18rem;
+    height: 38rem;
     border-radius: 1rem;
     margin-top: 3rem;
     margin-left: 5rem;
@@ -168,8 +171,9 @@ h1 {
     color: var(--text);
     padding: 1.5rem;
     font-size: 1.15rem;
-    text-align: center;
+    text-align: center; /* Aggiunta di questa riga */
 }
+
 
 .info1,
 .info2 {
@@ -201,19 +205,25 @@ h1 {
 
 .job1,
 .job2 {
-    margin-left: 1rem;
     font-size: 1.15rem;
     float: left;
+    width: 100%;
+    text-align: left;
 }
 
 .job1 {
-    width: 22rem;
+    margin-left: 5rem;
+}
+
+.job2 {
+    margin-left: 3rem;
 }
 
 .info-container,
 .study-container,
 .lang-container,
-.job-container {
+.job-container1,
+.job-container2 {
     display: flex;
     align-items: center;
 }
@@ -228,7 +238,11 @@ h1 {
     margin-top: 2rem;
 }
 
-.job-container {
+.job-container1 {
+    margin-top: 3rem;
+}
+
+.job-container2 {
     margin-top: 1rem;
 }
 
@@ -321,8 +335,8 @@ footer {
 
 .scroll-to-top {
     position: fixed;
-    bottom: 75px;
-    right: 20px;
+    bottom: 4rem;
+    right: 1rem;
     display: none;
     /* La freccia sarà nascosta di default */
     z-index: 999;
@@ -336,36 +350,67 @@ footer {
     /* Cambia il cursore al passaggio sopra l'immagine */
 }
 
-
-
 /* Stili per dispositivi con larghezza massima di 768px */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1105px) {
 
+    body {
+        width: 100%;
+    }
+
+    /*Nav responsive*/
     nav {
-        width: 100vw;
+        width: 100%;
     }
 
     .nav-buttons {
-        font-size: 0.35rem;
+        font-size: 0.5rem;
         text-align: center;
+        font-size: 1rem;
+        margin-right: 0;
+    }
+
+    .aboutme-button,
+    .myprojects-button {
+        border: 1px solid #374F59;
+        padding: 8px 10px;
+    }
+
+    .title {
+        font-size: 1.25rem;
     }
 
     .bigbox {
         width: 100%;
-        align-content: center;
+        margin: 0 auto;
     }
 
     .infobox,
     .studybox,
     .langbox,
     .jobbox {
-        width: 15rem;
-        font-size: small;
+        width: 18rem;
+        font-size: 0.85rem;
+        margin-left: 0;
     }
 
     .infobox {
+        height: 50rem;
+        margin: 3rem 0 0 20%
+    }
+
+    .studybox {
+        height: 50rem;
+        margin: 3rem 0 0 5%;
+    }
+
+    .langbox {
+        height: 15rem;
+        margin: 3rem 0 0 20%
+    }
+
+    .jobbox {
         height: 45rem;
-        margin-left: 0;
+        margin: 3rem 0 0 5%;
     }
 
 
@@ -374,16 +419,44 @@ footer {
     .lang-container,
     .job-container {
         display: block;
-        align-items: center;
     }
 
-    .foto,
-    .unige,
-    .liceti,
-    .ey,
+    .lang-item {
+        display: block;
+    }
+
+    .foto {
+        margin-bottom: 2rem;
+    }
+
+    .unige {
+        width: 5.5rem;
+        height: 5.5rem;
+        float: left;
+        margin: 0 0 2rem 4.5rem;
+    }
+
+    .liceti {
+        width: 8rem;
+        height: 6rem;
+        margin-left: 3.5rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .ey {
+        width: 5rem;
+        height: 5rem;
+        margin-left: 5.5rem;
+        margin-bottom: 1rem;
+    }
+
     .sigla {
-        width: 100%;
-        margin-left: 0;
+        width: 8rem;
+        height: 4rem;
+        margin-left: 3.5rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
     }
 
     .info1,
@@ -400,31 +473,200 @@ footer {
         text-align: center;
     }
 
-    .nav-buttons {
-        margin-right: 1rem;
+    .lang1 {
+        text-align: center;
+        font-size: medium;
     }
 
-    .title {
-        margin-top: 0;
+    .download-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download-button {
+        display: block;
+        margin-bottom: 2rem;
+        /* Aggiungi margine tra i bottoni */
+    }
+
+    .engCV {
+        margin-bottom: 0;
+    }
+
+    .scroll-to-top {
+        bottom: 100px;
+        right: 0.7rem;
     }
 }
 
-/* Stili per dispositivi con larghezza massima di 480px */
-@media only screen and (max-width: 550px) {
+
+
+/* Stili per dispositivi con larghezza massima di 768px */
+@media only screen and (max-width: 815px) {
 
     body {
-        width: 100vw;
+        width: 100%;
     }
 
     /*Nav responsive*/
     nav {
-        width: 100vw;
+        width: 100%;
     }
 
     .nav-buttons {
         font-size: 0.5rem;
         text-align: center;
-        font-size: 0.6rem;
+        font-size: 1rem;
+        margin-right: 0;
+    }
+
+    .aboutme-button,
+    .myprojects-button {
+        border: 1px solid #374F59;
+        padding: 8px 10px;
+    }
+
+    .title {
+        font-size: 1.25rem;
+    }
+
+    .bigbox {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .infobox,
+    .studybox,
+    .langbox,
+    .jobbox {
+        width: 18rem;
+        font-size: 0.85rem;
+        margin-left: 0;
+    }
+
+    .infobox {
+        height: 50rem;
+        margin: 3rem 0 0 10%
+    }
+
+    .studybox {
+        height: 50rem;
+        margin: 3rem 0 0 5%;
+    }
+
+    .langbox {
+        height: 15rem;
+        margin: 3rem 0 0 10%;
+    }
+
+    .jobbox {
+        height: 45rem;
+        margin: 3rem 0 0 5%;
+    }
+
+
+    .info-container,
+    .study-container,
+    .lang-container,
+    .job-container1,
+    .job-container2 {
+        display: block;
+    }
+
+    .lang-item {
+        display: block;
+    }
+
+    .foto {
+        margin-bottom: 2rem;
+    }
+
+    .unige {
+        width: 5.5rem;
+        height: 5.5rem;
+        float: left;
+        margin: 0 0 2rem 4.5rem;
+    }
+
+    .liceti {
+        width: 8rem;
+        height: 6rem;
+        margin-left: 3.5rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .ey {
+        width: 5rem;
+        height: 5rem;
+        margin-left: 5.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .sigla {
+        width: 8rem;
+        height: 4rem;
+        margin-left: 3.5rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .info1,
+    .info2 {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .study1,
+    .job1 {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .lang1 {
+        text-align: center;
+        font-size: medium;
+    }
+
+    .download-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download-button {
+        display: block;
+        margin-bottom: 2rem;
+        /* Aggiungi margine tra i bottoni */
+    }
+
+    .engCV {
+        margin-bottom: 0;
+    }
+
+    .scroll-to-top {
+        bottom: 100px;
+        right: 0.7rem;
+    }
+}
+
+/* Stili per dispositivi con larghezza massima di 480px */
+@media only screen and (max-width: 748px) {
+
+    body {
+        width: 100%;
+    }
+
+    /*Nav responsive*/
+    nav {
+        width: 100%;
+    }
+
+    .nav-buttons {
+        font-size: 0.5rem;
+        text-align: center;
+        font-size: 1rem;
         margin-right: 0;
     }
 
@@ -440,6 +682,146 @@ footer {
 
     .bigbox {
         width: 77vw;
+        margin: 0 auto;
+    }
+
+    .infobox,
+    .studybox,
+    .langbox,
+    .jobbox {
+        width: 18rem;
+        font-size: 0.85rem;
+        margin: 3rem;
+    }
+
+    .infobox {
+        height: 45rem;
+    }
+
+    .studybox {
+        height: 50rem;
+    }
+
+    .langbox {
+        height: 15rem;
+    }
+
+    .jobbox {
+        height: 45rem;
+    }
+
+
+    .info-container,
+    .study-container,
+    .lang-container,
+    .job-container1,
+    .job-container2{
+        display: block;
+    }
+
+    .lang-item {
+        display: block;
+    }
+
+    .foto {
+        margin-bottom: 2rem;
+    }
+
+    .liceti {
+        width: 8rem;
+        height: 6rem;
+        margin-left: 3.5rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .ey {
+        width: 5rem;
+        height: 5rem;
+        margin-left: 5.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .sigla {
+        width: 8rem;
+        height: 4rem;
+        margin-left: 3.5rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .info1,
+    .info2 {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .study1,
+    .job1 {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .lang1 {
+        text-align: center;
+        font-size: medium;
+    }
+
+    .download-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download-button {
+        display: block;
+        margin-bottom: 2rem;
+        /* Aggiungi margine tra i bottoni */
+    }
+
+    .engCV {
+        margin-bottom: 0;
+    }
+
+    .scroll-to-top {
+        bottom: 100px;
+        display: block;
+    }
+}
+
+
+/* Stili per dispositivi con larghezza massima di 480px */
+@media only screen and (max-width: 747px) {
+
+    body {
+        width: 100%;
+    }
+
+    /*Nav responsive*/
+    nav {
+        width: 100%;
+    }
+
+    .nav-buttons {
+        font-size: 0.5rem;
+        text-align: center;
+        font-size: 1rem;
+        margin-right: 0;
+    }
+
+    .aboutme-button,
+    .myprojects-button {
+        border: 1px solid #374F59;
+        padding: 8px 10px;
+    }
+
+    .title {
+        font-size: 1.25rem;
+    }
+
+    .bigbox {
+        width: 35vw;
         margin: 0 auto;
     }
 
@@ -472,7 +854,8 @@ footer {
     .info-container,
     .study-container,
     .lang-container,
-    .job-container {
+    .job-container1,
+    .job-container2 {
         display: block;
     }
 
@@ -484,15 +867,143 @@ footer {
         margin-bottom: 2rem;
     }
 
-    .unige {
-        width: 10rem;
+    .liceti {
+        width: 8rem;
+        height: 6rem;
+        margin-left: 3.5rem;
+        margin-top: 2rem;
         margin-bottom: 1rem;
-        margin-left: 4rem;
     }
 
-    .unige {
-        width: 7rem;
-        height: 7rem;
+    .ey {
+        width: 5rem;
+        height: 5rem;
+        margin-left: 5.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .sigla {
+        width: 8rem;
+        height: 4rem;
+        margin-left: 3.5rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .info1,
+    .info2 {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .study1,
+    .job1 {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .lang1 {
+        text-align: center;
+        font-size: medium;
+    }
+
+    .download-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download-button {
+        display: block;
+        margin-bottom: 2rem;
+        /* Aggiungi margine tra i bottoni */
+    }
+
+    .engCV {
+        margin-bottom: 0;
+    }
+
+    .scroll-to-top {
+        bottom: 100px;
+        display: block;
+    }
+}
+
+/* Stili per dispositivi con larghezza massima di 480px */
+@media only screen and (max-width: 500px) {
+
+    body {
+        width: 100%;
+    }
+
+    /*Nav responsive*/
+    nav {
+        width: 100%;
+    }
+
+    .nav-buttons {
+        font-size: 0.5rem;
+        text-align: center;
+        font-size: 1rem;
+        margin-right: 0;
+    }
+
+    .aboutme-button,
+    .myprojects-button {
+        border: 1px solid #374F59;
+        padding: 8px 10px;
+    }
+
+    .title {
+        font-size: 1.25rem;
+    }
+
+    .bigbox {
+        width: 65vw;
+        margin: 0 auto;
+    }
+
+    .infobox,
+    .studybox,
+    .langbox,
+    .jobbox {
+        width: 18rem;
+        font-size: 0.85rem;
+        margin-left: 0;
+    }
+
+    .infobox {
+        height: 45rem;
+    }
+
+    .studybox {
+        height: 50rem;
+    }
+
+    .langbox {
+        height: 15rem;
+    }
+
+    .jobbox {
+        height: 45rem;
+    }
+
+
+    .info-container,
+    .study-container,
+    .lang-container,
+    .job-container1,
+    .job-container2 {
+        display: block;
+    }
+
+    .lang-item {
+        display: block;
+    }
+
+    .foto {
+        margin-bottom: 2rem;
     }
 
     .liceti {
