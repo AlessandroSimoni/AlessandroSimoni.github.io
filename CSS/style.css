@@ -948,7 +948,7 @@ footer {
         /* Centratura orizzontale */
         align-items: center;
         /* Centratura verticale */
-        height: 100vh;
+        width: 100%;
         /* Imposta l'altezza del body al 100% dell'altezza del viewport */
         margin: 0;
     }
