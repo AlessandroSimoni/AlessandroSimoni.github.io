@@ -976,8 +976,7 @@ footer {
     }
 
     .bigbox {
-        width: 74vw;
-        margin: 0 auto;
+        width: 100%;
     }
 
     .infobox,
@@ -986,7 +985,7 @@ footer {
     .jobbox {
         width: 18rem;
         font-size: 0.85rem;
-        margin-left: 0;
+        margin: 2rem 10vw 0 10vw;
     }
 
     .infobox {
