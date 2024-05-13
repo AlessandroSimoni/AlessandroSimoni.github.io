@@ -171,7 +171,8 @@ h1 {
     color: var(--text);
     padding: 1.5rem;
     font-size: 1.15rem;
-    text-align: center; /* Aggiunta di questa riga */
+    text-align: center;
+    /* Aggiunta di questa riga */
 }
 
 
@@ -418,7 +419,7 @@ footer {
     .study-container,
     .lang-container,
     .job-container1,
-    .job-container2{
+    .job-container2 {
         display: block;
     }
 
@@ -720,7 +721,7 @@ footer {
     .study-container,
     .lang-container,
     .job-container1,
-    .job-container2{
+    .job-container2 {
         display: block;
     }
 
@@ -942,7 +943,14 @@ footer {
 @media only screen and (max-width: 500px) {
 
     body {
-        width: 100%;
+        display: flex;
+        justify-content: center;
+        /* Centratura orizzontale */
+        align-items: center;
+        /* Centratura verticale */
+        height: 100vh;
+        /* Imposta l'altezza del body al 100% dell'altezza del viewport */
+        margin: 0;
     }
 
     /*Nav responsive*/
@@ -968,7 +976,7 @@ footer {
     }
 
     .bigbox {
-        width: 65vw;
+        width: 73vw;
         margin: 0 auto;
     }
 
@@ -1058,6 +1066,11 @@ footer {
     }
 
     .download-buttons {
+        display: flex;
+        justify-content: center;
+        /* Centratura orizzontale */
+        align-items: center;
+        /* Centratura verticale */
         flex-direction: column;
         align-items: center;
     }
