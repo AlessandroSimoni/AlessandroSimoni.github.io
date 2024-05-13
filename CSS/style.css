@@ -409,7 +409,7 @@ footer {
     }
 
     .jobbox {
-        height: 45rem;
+        height: 68rem;
         margin: 3rem 0 0 5%;
     }
 
@@ -417,7 +417,8 @@ footer {
     .info-container,
     .study-container,
     .lang-container,
-    .job-container {
+    .job-container1,
+    .job-container2{
         display: block;
     }
 
@@ -467,7 +468,8 @@ footer {
     }
 
     .study1,
-    .job1 {
+    .job1,
+    .job2 {
         width: 100%;
         margin-left: 0;
         text-align: center;
@@ -479,6 +481,7 @@ footer {
     }
 
     .download-buttons {
+        margin-top: 4rem;
         flex-direction: column;
         align-items: center;
     }
@@ -560,7 +563,7 @@ footer {
     }
 
     .jobbox {
-        height: 45rem;
+        height: 68rem;
         margin: 3rem 0 0 5%;
     }
 
@@ -619,7 +622,8 @@ footer {
     }
 
     .study1,
-    .job1 {
+    .job1,
+    .job2 {
         width: 100%;
         margin-left: 0;
         text-align: center;
@@ -631,6 +635,7 @@ footer {
     }
 
     .download-buttons {
+        margin-top: 4rem;
         flex-direction: column;
         align-items: center;
     }
@@ -707,7 +712,7 @@ footer {
     }
 
     .jobbox {
-        height: 45rem;
+        height: 68rem;
     }
 
 
@@ -758,7 +763,8 @@ footer {
     }
 
     .study1,
-    .job1 {
+    .job1,
+    .job2 {
         width: 100%;
         margin-left: 0;
         text-align: center;
@@ -770,6 +776,7 @@ footer {
     }
 
     .download-buttons {
+        margin-top: 4rem;
         flex-direction: column;
         align-items: center;
     }
@@ -847,7 +854,7 @@ footer {
     }
 
     .jobbox {
-        height: 45rem;
+        height: 68rem;
     }
 
 
@@ -898,7 +905,8 @@ footer {
     }
 
     .study1,
-    .job1 {
+    .job1,
+    .job2 {
         width: 100%;
         margin-left: 0;
         text-align: center;
@@ -986,7 +994,7 @@ footer {
     }
 
     .jobbox {
-        height: 45rem;
+        height: 68rem;
     }
 
 
@@ -1037,7 +1045,8 @@ footer {
     }
 
     .study1,
-    .job1 {
+    .job1,
+    .job2 {
         width: 100%;
         margin-left: 0;
         text-align: center;
