@@ -260,7 +260,7 @@ h1 {
 .luogo,
 .patente,
 .nascita,
-.genere,
+.github,
 .auto {
     width: 2rem;
     height: 2rem;
@@ -273,18 +273,20 @@ h1 {
 
 .number:hover,
 .mail:hover,
-.linkedin:hover {
+.linkedin:hover,
+.git:hover {
     text-decoration: underline;
 }
 
-.mail {
+.mail,
+.git {
     float: left;
-    margin-top: 0.25rem;
 }
 
 .phone,
 .user,
-.email {
+.email,
+.github {
     width: 2rem;
     height: 2rem;
     float: left;
